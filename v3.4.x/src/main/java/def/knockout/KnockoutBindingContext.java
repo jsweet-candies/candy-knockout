@@ -20,6 +20,5 @@ public abstract class KnockoutBindingContext extends def.js.Object {
     native public Object createChildContext(Object dataItemOrAccessor);
     native public Double $index();
     native public void $index(Double value);
-    native public void $index(null value);
 }
 

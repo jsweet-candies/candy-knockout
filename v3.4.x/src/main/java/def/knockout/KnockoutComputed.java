@@ -7,6 +7,5 @@ public abstract class KnockoutComputed<T> extends KnockoutObservable<T> {
     native public Boolean isActive();
     native public double getDependenciesCount();
     native public KnockoutComputed<T> extend(RequestedExtenders requestedExtenders);
-    native public jsweet.util.union.Union<KnockoutBindingHandler,undefined> $get(String key);
 }
 

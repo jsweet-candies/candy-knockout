@@ -12,7 +12,7 @@ public abstract class KnockoutObservableArrayFunctions<T> extends def.js.Object 
     native public KnockoutObservableArray<T> reverse();
     native public KnockoutObservableArray<T> sort();
     native public KnockoutObservableArray<T> sort(java.util.function.BiFunction<T,T,Double> compareFunction);
-    native public jsweet.util.union.Union<KnockoutBindingHandler,undefined> $get(String key);
+    native public jsweet.util.union.Union<KnockoutBindingHandler,Object> $get(String key);
     native public void replace(T oldItem, T newItem);
     native public T[] remove(T item);
     native public T[] remove(java.util.function.Function<T,Boolean> removeFunction);

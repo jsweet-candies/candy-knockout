@@ -150,10 +150,9 @@ public abstract class KnockoutStatic extends def.js.Object {
     native public Object renderTemplate(String template, Object viewModel, Object options);
     native public Object renderTemplate(String template, Object viewModel);
     native public <T> T unwrap(T value);
-    native public void setTemplateEngine(undefined templateEngine);
+    native public void setTemplateEngine(Object templateEngine);
     native public <T> def.knockout.KnockoutObservable<T> observable(T value);
     native public <T> def.knockout.KnockoutObservable<T> observable();
-    native public <T> def.knockout.KnockoutObservable<T> observable(null value);
     native public <T> def.knockout.KnockoutComputed<T> computed();
     native public <T> def.knockout.KnockoutComputed<T> computed(java.util.function.Supplier<T> func, Object context, Object options);
     native public <T> def.knockout.KnockoutComputed<T> computed(def.knockout.KnockoutComputedDefine<T> def, Object context);
@@ -162,6 +161,5 @@ public abstract class KnockoutStatic extends def.js.Object {
     native public <T> def.knockout.KnockoutComputed<T> computed(def.knockout.KnockoutComputedDefine<T> def);
     native public <T> def.knockout.KnockoutObservableArray<T> observableArray(T[] value);
     native public <T> def.knockout.KnockoutObservableArray<T> observableArray();
-    native public <T> def.knockout.KnockoutObservableArray<T> observableArray(null value);
 }
 

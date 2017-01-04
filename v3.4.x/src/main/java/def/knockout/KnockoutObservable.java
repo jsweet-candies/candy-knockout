@@ -20,9 +20,7 @@ public abstract class KnockoutObservable<T> extends KnockoutSubscribable<T> {
     public static class ValueWillMutate extends def.js.Object {
         native public void apply();
     }
-    native public jsweet.util.union.Union<KnockoutBindingHandler,undefined> $get(String key);
     native public Boolean equalityComparer(Object a, Object b);
-    native public void apply(null value);
     native public void valueHasMutated();
     native public void valueWillMutate();
 }
