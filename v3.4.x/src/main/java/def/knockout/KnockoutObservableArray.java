@@ -2,7 +2,6 @@ package def.knockout;
 @jsweet.lang.Interface
 @jsweet.lang.Extends({KnockoutObservableArrayFunctions.class})
 public abstract class KnockoutObservableArray<T> extends KnockoutObservable<T[]> {
-    native public KnockoutSubscription subscribe(java.util.function.Consumer<KnockoutArrayChange<T>[]> callback, Object target, def.knockout.StringTypes.arrayChange event);
     native public KnockoutSubscription subscribe(java.util.function.Consumer<T[]> callback, Object target, def.knockout.StringTypes.beforeChange event);
     native public KnockoutSubscription subscribe(java.util.function.Consumer<T[]> callback, Object target, def.knockout.StringTypes.change event);
     native public <TEvent> KnockoutSubscription subscribe(java.util.function.Consumer<TEvent> callback, Object target, String event);
